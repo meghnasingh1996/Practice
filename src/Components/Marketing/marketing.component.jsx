@@ -17,10 +17,6 @@ class Market extends React.Component{
         event.preventDefault();
         this.setState({email:''});
     }
-    handleChange = event => {
-        const {name, value} = event.target;
-        this.setState({[name] : value});
-    }
     render(){
         return(
             <div className="market-container">
@@ -37,8 +33,6 @@ class Market extends React.Component{
             <input name='email' 
                 type='email' 
                 placeholder='ENTER YOUR WORK MAIL'
-                handleChange={this.handleChange}
-                value={this.state.email} 
                 required /> 
             <CustomButton type='submit'  className="subscribeButton" >
                 Subscribe
