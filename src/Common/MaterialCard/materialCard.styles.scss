@@ -1,0 +1,60 @@
+$pink : #be2664;
+
+.CardClass{
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+
+    .blogImageDiv{
+        padding-right: 40px;
+    }
+
+    h2{
+        margin-block-end: 0rem;
+        margin-block-start: 0.1rem;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .para1{
+        padding-top: 10px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    .buttton-image{
+        display: flex;
+        flex-direction: column;
+
+        .customButtonClass{
+            background-color: white;
+            border: 1px solid $pink;
+            border-radius: 40px;
+            color: $pink;
+            font-weight: 600;
+            width: 120px;
+            height: 40px;
+        }
+        .customButtonClass:hover{
+            background-color: $pink;
+            color: white;
+        }
+
+        .image{
+            padding-top:20px;
+            display: flex;
+
+            .author{
+                padding-left: 20px;
+
+                h4{
+                    margin-block-end: 0.1rem;
+                    margin-block-start: 0.6rem;
+                }
+                p{
+                    margin-block-start: 0.3rem;
+                    font-weight: 500;
+                    color: $pink;
+                }
+            }
+        }
+    }
+}
