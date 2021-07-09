@@ -21,7 +21,7 @@ const CardList = () => {
     // using useState Hook
     const [users, setUsers] = useState([]);
     const [currentPage , setCurrentPage] = useState(1);
-    const [postsPerPage , setPostsPerPage] = useState(10);
+    const [postsPerPage ] = useState(10);
 
     // For pagination
     const handleClick = (event) => {
