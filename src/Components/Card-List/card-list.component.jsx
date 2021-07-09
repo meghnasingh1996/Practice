@@ -36,7 +36,7 @@ const CardList = () => {
     const renderPageNumbers = pages.map(number => {
         return(
             <li key={number} id={number} onClick={handleClick}
-            className={currentPage == number ? "active" : null}
+            className={currentPage === number ? "active" : null}
             >{number}</li>
         )
     });
